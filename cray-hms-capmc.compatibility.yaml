@@ -2,7 +2,7 @@
 # CSM Version is not really following semver.
 chartVersionToCSMVersion:
   # Chart version: CSM version
-  "^1.24.0": "~1.0.0"
+  "^1.23.12": "~1.0.0"
   ">=2.0.0": "~1.2.0" # Chart Version: 2.0.0 <= x.y.z, CSM Version: 1.2.0 <= x.y.z < 1.3.0
 
 # The application version must be compliant to semantic versioning.
@@ -10,7 +10,7 @@ chartVersionToCSMVersion:
 # This is the idealized world
 chartVersionToApplicationVersion:
   # Chart version: Application version
-  "1.24.0": "1.31.0"
+  "1.23.12": "1.31.0"
   "2.0.0": "1.29.0"
   "2.0.1": "1.30.0"
   "2.0.2": "1.31.0"
