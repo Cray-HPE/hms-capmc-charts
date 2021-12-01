@@ -10,10 +10,6 @@
 global:
   appVersion: 1.31.0
 
-image:
-  repository: artifactory.algol60.net/csm-docker/stable/cray-capmc
-  pullPolicy: IfNotPresent
-
 hms_ca_uri: ""
 
 cray-service:
@@ -25,7 +21,7 @@ cray-service:
     cray-capmc:
       name: "cray-capmc"
       image:
-        repository: artifactory.algol60.net/csm-docker/stable/cray-capmc
+        repository: "cray/cray-capmc"
       ports:
         - name: http
           containerPort: 27777
