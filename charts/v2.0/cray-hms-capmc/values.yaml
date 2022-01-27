@@ -21,6 +21,20 @@ cray-service:
   nameOverride: "cray-capmc"
   fullnameOverride: "cray-capmc"
   replicaCount: 3
+  affinity:
+    podAntiAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+      - topologyKey: kubernetes.io/hostname
+        labelSelector:
+          matchExpressions:
+            - key: app.kubernetes.io/name
+              operator: In
+              values:
+              - cray-capmc
+  strategy:
+    rollingUpdate:
+      maxUnavailable: 50%
+    type: RollingUpdate
   containers:
     cray-capmc:
       name: "cray-capmc"
