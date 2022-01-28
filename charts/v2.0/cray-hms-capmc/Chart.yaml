@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 name: "cray-hms-capmc"
-version: 2.0.3
+version: 2.0.4
 description: "Kubernetes resources for cray-hms-capmc"
 home: "https://github.com/Cray-HPE/hms-capmc-charts"
 sources:
