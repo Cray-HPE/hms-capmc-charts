@@ -65,13 +65,13 @@ cray-service:
       livenessProbe:
         httpGet:
           port: 27777
-          path: /capmc/liveness
+          path: /capmc/v1/liveness
         initialDelaySeconds: 10
         periodSeconds: 20
       readinessProbe:
         httpGet:
           port: 27777
-          path: /capmc/readiness
+          path: /capmc/v1/readiness
         initialDelaySeconds: 5
         periodSeconds: 60
       resources:
