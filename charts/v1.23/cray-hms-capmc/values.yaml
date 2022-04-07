@@ -8,7 +8,7 @@
 #   pullPolicy: "" (default = "IfNotPresent")
 
 global:
-  appVersion: 1.31.1
+  appVersion: 1.31.1-20220406200816_577905b
 
 hms_ca_uri: ""
 

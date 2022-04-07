@@ -4,4 +4,4 @@ description: "Kubernetes resources for cray-hms-capmc"
 name: "cray-hms-capmc"
 home: "HMS/hms-capmc"
 version: 1.23.13
-appVersion: "1.31.1"
+appVersion: "1.31.1-20220406200816_577905b"

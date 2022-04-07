@@ -8,8 +8,8 @@
 #   pullPolicy: "" (default = "IfNotPresent")
 
 global:
-  appVersion: 2.1.0
-  testVersion: 2.1.0
+  appVersion: 2.1.0-20220406195745.30b6cde
+  testVersion: 2.1.0-20220406195745.30b6cde
 tests:
   image:
     repository: artifactory.algol60.net/csm-docker/stable/cray-capmc-test
