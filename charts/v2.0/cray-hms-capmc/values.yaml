@@ -8,7 +8,7 @@
 #   pullPolicy: "" (default = "IfNotPresent")
 
 global:
-  appVersion: 1.33.1-20220406200604_f4e377c
+  appVersion: 1.33.0
 
 image:
   repository: artifactory.algol60.net/csm-docker/stable/cray-capmc
