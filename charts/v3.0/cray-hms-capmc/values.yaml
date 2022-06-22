@@ -8,8 +8,8 @@
 #   pullPolicy: "" (default = "IfNotPresent")
 
 global:
-  appVersion: 2.1.0
-  testVersion: 2.1.0
+  appVersion: 2.2.0
+  testVersion: 2.2.0
 
 image:
   repository: artifactory.algol60.net/csm-docker/stable/cray-capmc
@@ -18,7 +18,7 @@ image:
 tests:
   image:
     repository: artifactory.algol60.net/csm-docker/stable/cray-capmc-test
-    pullPolicy: Always
+    pullPolicy: IfNotPresent
 
 hms_ca_uri: ""
 
