@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 name: "cray-hms-capmc"
-version: 3.0.4
+version: 3.0.5
 description: "Kubernetes resources for cray-hms-capmc"
 home: "https://github.com/Cray-HPE/hms-capmc-charts"
 sources:
@@ -13,6 +13,6 @@ dependencies:
 maintainers:
   - name: Hardware Management
     url: https://github.com/orgs/Cray-HPE/teams/hardware-management
-appVersion: "2.3.0"
+appVersion: "2.4.0"
 annotations:
   artifacthub.io/license: "MIT"
