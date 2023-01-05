@@ -26,6 +26,7 @@ chartVersionToApplicationVersion:
   "3.0.5": "2.4.0"
   "3.0.6": "2.5.0"
   "3.0.7": "2.6.0"
+  "3.0.8": "2.7.0"
 
 # Test results for combinations of Chart, Application, and CSM versions.
 chartValidationLog: []
