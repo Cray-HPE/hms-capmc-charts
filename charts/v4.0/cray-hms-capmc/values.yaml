@@ -8,7 +8,7 @@
 #   pullPolicy: "" (default = "IfNotPresent")
 
 global:
-  appVersion: 3.0.0
+  appVersion: 3.1.0
   testVersion: 3.0.0
 
 image:
@@ -52,6 +52,8 @@ cray-service:
       env:
         - name: HSM_URL
           value: "http://cray-smd"
+        - name: PCS_URL
+          value: "http://cray-power-control"
         - name: CAPMC_CONFIG
           value: "/usr/local/etc/capmc-service/config.toml"
         - name: VAULT_ADDR
