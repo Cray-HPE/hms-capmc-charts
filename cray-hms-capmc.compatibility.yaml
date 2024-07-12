@@ -6,6 +6,7 @@ chartVersionToCSMVersion:
   ">=2.0.0": "~1.2.0" # Chart Version: 2.0.0 <= x.y.z, CSM Version: 1.2.0 <= x.y.z < 1.3.0
   ">=3.0.0": "~1.3.0"
   ">=4.0.0": "~1.4.0"
+  ">=4.1.0": "~1.5.0" # 4.1.0 is the update to cray-service 10.0
 
 # The application version must be compliant to semantic versioning.
 # If the application makes a backwards incompatible change, then its major version needs to be increment.
@@ -32,6 +33,7 @@ chartVersionToApplicationVersion:
   "4.0.1": "3.1.0"
   "4.0.2": "3.3.0"
   "4.0.3": "3.6.0"
+  "4.1.0": "3.6.0"
 
 # Test results for combinations of Chart, Application, and CSM versions.
 chartValidationLog: []
