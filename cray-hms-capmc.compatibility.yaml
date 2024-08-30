@@ -1,12 +1,21 @@
 ---
 # CSM Version is not really following semver.
 chartVersionToCSMVersion:
+  # Summary:
+  #   Chart Version: 1.23.12 <= x.y.z < 2.0.0, CSM Version: 1.0.0 <= x.y.z < 1.2.0
+  #   Chart Version: 2.0.0   <= x.y.z < 3.0.0, CSM Version: 1.2.0 <= x.y.z < 1.3.0
+  #   Chart Version: 3.0.0   <= x.y.z < 4.0.0, CSM Version: 1.3.0 <= x.y.z < 1.4.0
+  #   Chart Version: 4.0.0   <= x.y.z < 4.1.0, CSM Version: 1.4.0 <= x.y.z < 1.5.0
+  #   Chart Version: 4.1.0   <= x.y.z < 5.0.0, CSM Version: 1.5.0 <= x.y.z < 1.6.0
+  #   Chart Version: 5.0.0   <= x.y.z,         CSM Version: 1.6.0 <= x.y.z
+  #
   # Chart version: CSM version
   "^1.23.12": "~1.0.0"
-  ">=2.0.0": "~1.2.0" # Chart Version: 2.0.0 <= x.y.z, CSM Version: 1.2.0 <= x.y.z < 1.3.0
+  ">=2.0.0": "~1.2.0"
   ">=3.0.0": "~1.3.0"
   ">=4.0.0": "~1.4.0"
   ">=4.1.0": "~1.5.0" # 4.1.0 is the update to cray-service 10.0
+  ">=5.0.0": "~1.6.0" # 5.0.0 contains features specific to k8s 1.24 or later
 
 # The application version must be compliant to semantic versioning.
 # If the application makes a backwards incompatible change, then its major version needs to be increment.
@@ -34,6 +43,7 @@ chartVersionToApplicationVersion:
   "4.0.2": "3.3.0"
   "4.0.3": "3.6.0"
   "4.1.0": "3.6.0"
+  "5.0.0": "3.6.0"
 
 # Test results for combinations of Chart, Application, and CSM versions.
 chartValidationLog: []
