@@ -1,0 +1,18 @@
+---
+apiVersion: v2
+name: "cray-hms-capmc"
+version: 5.1.0
+description: "Kubernetes resources for cray-hms-capmc"
+home: "https://github.com/Cray-HPE/hms-capmc-charts"
+sources:
+  - "https://github.com/Cray-HPE/hms-capmc"
+dependencies:
+  - name: cray-service
+    version: "~11.0"
+    repository: https://artifactory.algol60.net/artifactory/csm-helm-charts
+maintainers:
+  - name: Hardware Management
+    url: https://github.com/orgs/Cray-HPE/teams/hardware-management
+appVersion: "3.7.0"
+annotations:
+  artifacthub.io/license: "MIT"
